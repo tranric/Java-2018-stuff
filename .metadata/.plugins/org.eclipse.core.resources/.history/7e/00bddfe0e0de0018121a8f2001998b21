@@ -1,0 +1,51 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class Main {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
+
+		Account a1 = new Account(1, "Current" , 100);
+		Account a2 = new Account(2, "Current" ,  200);
+		Account a3 = new Account(3 , "Deposit" ,  600);
+		Account a4 = new Account(4, "Deposit" ,  300);
+
+		System.out.println("Encryption:");
+		Encryption Encrypt = new Encryption();
+
+		Encrypt.Encrypt(a1.getAccountId(), a1.getAccountType(),
+				"Bob", a1.getBalance());
+		/*
+		Encrypt.Encrypt(a2.getAccountId(), a2.getAccountType(),
+				"Edward", a2.getBalance());
+		*/
+		System.out.println("\n");
+
+		System.out.println("Decryption:");
+
+		Decryption Decrpyt = new Decryption();
+		ObjectInputStream input =
+				new ObjectInputStream (new FileInputStream("account.dat"));
+		Account accountdecrypt;
+		accountdecrypt = (Account)input.readObject();
+
+
+		Decrpyt.Decrpyt(accountdecrypt.getAccountId(),
+			accountdecrypt.getAccountType(),"fig", accountdecrypt.getBalance());
+
+		/*
+		 Decrpyt.Decrpyt(accountdecrypt.getAccountId(),
+			accountdecrypt.getAccountType(),"grapes", accountdecrypt.getBalance());
+		 */
+
+
+
+
+
+
+
+	}
+
+}

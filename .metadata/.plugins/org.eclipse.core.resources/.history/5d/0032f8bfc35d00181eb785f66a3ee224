@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class q1a {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//convert decimal to binary
+		double input =0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a decimal number:");
+		input = scan.nextFloat();
+		convertToBinary(input);
+
+
+	}
+
+    public static void convertToBinary(double input){
+        double container[] = new double[100];
+        int i = 0;
+        while (input > 0){
+            container[i] = input%2;
+            i++;
+            input = input/2;
+        }
+        for (int j = i -1 ; j >= 0 ; j--){
+            System.out.print(container[j]);
+        }
+    }
+
+}

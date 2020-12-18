@@ -1,0 +1,38 @@
+import java.io.Serializable;
+
+public class Account implements Serializable{
+
+	private int AccountId;
+	private String AccountType;
+	private String Name;
+	private double Balance;
+
+	public Account(int accountId, String accountType,  double balance) {
+		super();
+		AccountId = accountId;
+		AccountType = accountType;
+		Balance = balance;
+	}
+	public int getAccountId() {
+		return AccountId;
+	}
+	public void setAccountId(int accountId) {
+		AccountId = accountId;
+	}
+	public String getAccountType() {
+		return AccountType;
+	}
+	public void setAccountType(String accountType) {
+		AccountType = accountType;
+	}
+	public double getBalance() {
+		return Balance;
+	}
+	public void setBalance(double balance) {
+		Balance = balance;
+	}
+
+
+
+
+}

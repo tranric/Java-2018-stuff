@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecondController">
+   <children>
+      <Button fx:id="_btnClose" layoutX="72.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
+      <CheckBox layoutX="50.0" layoutY="56.0" mnemonicParsing="false" text="CheckBox" />
+   </children>
+</AnchorPane>

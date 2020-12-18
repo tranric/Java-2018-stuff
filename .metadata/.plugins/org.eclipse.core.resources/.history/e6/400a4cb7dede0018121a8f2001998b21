@@ -1,0 +1,35 @@
+import java.io.*;
+
+public class Decryption {
+
+
+	public void Decrpyt(int id, String type, String mappingword, double balance )
+			throws FileNotFoundException, IOException, ClassNotFoundException{
+		ObjectInputStream input =
+				new ObjectInputStream (new FileInputStream("account.dat"));
+		Account accountdecrypt;
+		accountdecrypt = (Account)input.readObject();
+
+		if(accountdecrypt.getAccountType().equals("Current")){
+			Current_decrypt(id, type, mappingword, balance);
+		}
+		else if(accountdecrypt.getAccountType().equals("Deposit")){
+			Deposit_decrypt(id, type, mappingword, balance);
+		}
+		System.out.println("ID: " + accountdecrypt.getAccountId() +
+				"\nAccount Type: " + accountdecrypt.getAccountType() +
+				"\nBalance: " + accountdecrypt.getBalance());
+
+		input.close();
+
+
+	}
+
+	public void Current_decrypt(int id, String type, String mappingword, double balance){
+		balance = balance / mappingword.length();
+	}
+
+	public void Deposit_decrypt(int id, String type, String mappingword, double balance){
+		balance = balance - mappingword.length();
+	}
+}

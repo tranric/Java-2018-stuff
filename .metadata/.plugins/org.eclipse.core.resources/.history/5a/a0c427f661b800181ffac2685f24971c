@@ -1,0 +1,156 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// Lab 1
+// Richard Tran
+// 991360218
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+
+		Student s1 = new Student(1, "John", "Security");
+		Student s2 = new Student(2, "Tom", "DB");
+		Student s3 = new Student(3, "Bob", "IT");
+		Student s4 = new Student(4, "Alice", "IT");
+		Student s5 = new Student(5, "Jill", "DB");
+
+		Course c1 = new Course("C1", "Java");
+		Course c2 = new Course("C2", "Databases");
+		Course c3 = new Course("C3", "Networking");
+
+		Register r1 = new Register(1, s1, c1);
+		Register r2 = new Register(2, s1, c2);
+		Register r3 = new Register(3, s2, c3);
+		Register r4 = new Register(4, s3, c1);
+		Register r5 = new Register(5, s3, c2);
+		Register r6 = new Register(6, s3, c3);
+
+
+
+		ArrayList<Student> allstudents = new ArrayList();
+		ArrayList<Course> allcourses = new ArrayList();
+		ArrayList<Register> allRegister = new ArrayList();
+
+		allstudents.add(s1);
+		allstudents.add(s2);
+		allstudents.add(s3);
+		allstudents.add(s4);
+		allstudents.add(s5);
+
+		allcourses.add(c1);
+		allcourses.add(c2);
+		allcourses.add(c3);
+
+		allRegister.add(r1);
+		allRegister.add(r2);
+		allRegister.add(r3);
+		allRegister.add(r4);
+		allRegister.add(r5);
+		allRegister.add(r6);
+
+		//allRegister.add(r1);
+		/*
+		int minimumstudents=5, minimumentered=0, minimumcourses=3;
+
+		System.out.println("Enter in 5 students");
+		//add 5 students minimum requirement
+		while(minimumentered < minimumstudents){
+			System.out.print("Please enter in student id: ");
+			int id = input.nextInt();
+			System.out.print("Please enter in student name: ");
+			String name = input.next();
+			System.out.print("Please enter in student program: ");
+			String program = input.next();
+
+			Student Sx = new Student(id, name, program);
+			allstudents.add(Sx);
+			minimumentered++;
+
+		}
+		minimumentered=0;
+		//add minimum of 3 courses
+
+		System.out.println("Enter in 3 courses");
+		while(minimumentered < minimumcourses){
+			System.out.print("Please enter in course code: ");
+			String CC = input.next();
+			System.out.print("Please enter in course name: ");
+			String Cname = input.next();
+
+			Course Cx = new Course(CC, Cname);
+
+			allcourses.add(Cx);
+			minimumentered++;
+
+		}
+		//add two students per course
+		System.out.println("Please add at least two(2) students per course:");
+		for(int x=0; x < allcourses.size(); x++){
+			//two per course
+			int studentadded=2, studentindex=0;
+
+			for(int y=0; y<studentadded; y++){
+			boolean studentfound=false;
+			System.out.print("Please enter a student id for course id "
+					+ allcourses.get(x).getCourseCode() + ": ");
+			int studentid = input.nextInt();
+			for(int i=0; i < allstudents.size(); i++){
+				if(studentid == allstudents.get(i).getStudentId()){
+					studentfound = true;
+					studentindex=i;
+				}
+			}
+
+			if(studentfound == false){
+				System.out.println("Student id was not found.");
+				continue;
+			}
+
+
+
+			Register Rx = new Register(x, allstudents.get(studentindex),
+					allcourses.get(x));
+			allRegister.add(Rx);
+			y++;
+			}
+		}
+
+*/
+
+		System.out.println("1. List of students registered"
+				+ " in a course (organized by student id): ");
+
+
+		//System.out.println("allRegister size:" + allRegister.size());
+
+		//System.out.println("allcourses size of studentlist: "+ allcourses.get(0).getStudentList().size());
+
+		for(int x=0; x< allcourses.size(); x++){
+			if( allcourses.get(x).getStudentList().isEmpty()){
+				System.out.println(allcourses.get(x).getName() +
+						" Did not have any registered students");
+			}
+			else{
+				System.out.println("Students: ");
+				for(int y=0; y <
+						allcourses.get(x).getStudentList().size();
+				y++){
+					System.out.println(
+							allcourses.get(x).getStudentList().get(y));
+
+				}
+			}
+
+		}
+
+
+
+
+		input.close();
+	}
+
+}

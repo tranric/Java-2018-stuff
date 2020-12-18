@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button fx:id="Btn1" layoutX="174.0" layoutY="175.0" mnemonicParsing="false" onAction="#Btn1Clicked" text="Button1" />
+      <TextField fx:id="Txtfield1" layoutX="94.0" layoutY="46.0" prefHeight="86.0" prefWidth="212.0" />
+      <Button fx:id="Btnsecondopen" layoutX="139.0" layoutY="234.0" mnemonicParsing="false" onAction="#BtnsecondopenClicked" text="Open Second Scene" />
+   </children>
+</AnchorPane>

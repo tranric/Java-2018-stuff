@@ -1,0 +1,47 @@
+import java.io.*;
+
+public class Decryption {
+
+	private int id;
+	private String type, mappingword;
+	double balance;
+
+
+	public void Decrpyt(int id, String type, String mappingword, double balance )
+			throws FileNotFoundException, IOException, ClassNotFoundException{
+		this.id = id;
+		this.type = type;
+		this.mappingword = mappingword;
+		this.balance = balance;
+		//System.out.println("The balance: " + this.balance);
+
+
+
+		if(this.type.equals("Current")){
+			Current_decrypt(this.id, this.type, this.mappingword, this.balance);
+		}
+		else if(this.type.equals("Deposit")){
+			Deposit_decrypt(this.id, this.type, this.mappingword, this.balance);
+		}
+		System.out.println("Decrypted information: "
+				+ "\nID: " + this.id +
+				"\nAccount Type: " + this.type +
+				"\nBalance(True balance): " + this.balance);
+
+
+	}
+
+	public void Current_decrypt(int id, String type,
+			String mappingword, double balance){
+		//System.out.println("balance before decryption: " + this.balance);
+		this.balance = balance / mappingword.length();
+	//	System.out.println("balance after decryption: " + this.balance);
+	}
+
+	public void Deposit_decrypt(int id, String type,
+			String mappingword, double balance){
+		//System.out.println("balance before decryption: " + this.balance);
+		this.balance = balance - mappingword.length();
+		//System.out.println("balance after decryption: " + this.balance);
+	}
+}

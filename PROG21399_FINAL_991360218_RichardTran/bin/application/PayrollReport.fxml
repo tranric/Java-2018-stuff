@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.PayrollReportController">
+   <children>
+      <Text layoutX="163.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payroll Report" />
+      <Text layoutX="30.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name:" />
+      <Text layoutX="30.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hourly pay rate:" />
+      <Text layoutX="30.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of hours worked:" />
+      <TextField fx:id="TxtFieldName" layoutX="200.0" layoutY="84.0" />
+      <TextField fx:id="TxtFieldHourly" layoutX="200.0" layoutY="138.0" />
+      <TextField fx:id="TxtFieldNumberOfHours" layoutX="200.0" layoutY="188.0" />
+      <TextArea fx:id="TxtAreaEmployeeList" layoutX="30.0" layoutY="337.0" prefHeight="200.0" prefWidth="341.0" />
+      <Button fx:id="BtnAddEmployee" layoutX="154.0" layoutY="268.0" mnemonicParsing="false" onAction="#AddEmployee" text="Add Employee" />
+   </children>
+</AnchorPane>

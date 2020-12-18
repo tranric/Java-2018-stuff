@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class q1a {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//convert decimal to binary
+		double input =0;
+		int full=0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a decimal number:");
+		input = scan.nextFloat();
+		full = (int)input;
+		full %
+
+	}
+
+
+
+}

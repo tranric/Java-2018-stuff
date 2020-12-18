@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentListController">
+   <children>
+      <Button fx:id="BtnAdd" layoutX="159.0" layoutY="103.0" mnemonicParsing="false" onAction="#addstudent" text="Add Student" />
+      <Text layoutX="52.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:" />
+      <TextField fx:id="TxtFieldName" layoutX="174.0" layoutY="45.0" />
+      <TextArea fx:id="TxtAreaList" layoutX="42.0" layoutY="142.0" prefHeight="231.0" prefWidth="329.0" />
+   </children>
+</AnchorPane>

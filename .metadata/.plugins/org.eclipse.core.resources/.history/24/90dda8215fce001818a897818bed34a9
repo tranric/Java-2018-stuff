@@ -1,0 +1,18 @@
+import java.util.Comparator;
+import java.util.Stack;
+
+public class Same_city implements Comparator<Student>{
+
+	@Override
+	public int compare(Student s1, Student s2) {
+		Stack<Student> studentstack = new Stack();
+
+		if(s1.homeCity.equals(s2.homeCity)){
+			return 1;
+		}
+		else{
+		return 0;
+		}
+	}
+
+}

@@ -1,0 +1,109 @@
+import java.util.ArrayList;
+
+//Lab 2
+//Richard Tran
+//991360218
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//making both lists for the questions
+		Integer[] li1 = {6,4,1};
+		Integer[] li2 = {6,4,2,7,5,5,0,8,8,4,4};
+
+		ArrayList<Integer> list1 = new ArrayList();
+		for(Integer e : li1){
+			list1.add(e);
+		}
+		ArrayList<Integer> list2 = new ArrayList();
+		for(Integer e : li2){
+			list2.add(e);
+		}
+
+		//output for Answer to (i)
+		System.out.println("Answer to (i)");
+		System.out.println("The List 1 = " + list1);
+		System.out.println("The List 2 = " + list2);
+		System.out.println("Both Lists together: " + addLists(list1, list2));
+
+		System.out.println();
+
+		//output for Answer to (ii)
+		System.out.println("Answer to (ii)");
+		System.out.println("List 1 after removing common items:"
+				+ removeFromList(list1, list2).size());
+
+		System.out.println();
+
+		//output for Answer to (iii)
+		System.out.println("Answer to (iii)");
+		countOccurrences(list1, list2);
+
+	}
+
+
+// answer to (i)
+public static <E>   ArrayList<E> addLists(ArrayList<E> list1, ArrayList<E> list2 ){
+
+		ArrayList<E> temp = new ArrayList();
+
+		//adds all of the elements to the temp array from list 1
+		temp.addAll(list1);
+		//same as above but with list 2
+		temp.addAll(list2);
+		//returns an arraylist containing both lists combined.
+		return temp;
+
+	}
+
+// Answer to (ii)
+public static <E extends Comparable<E>> ArrayList<E> removeFromList
+(ArrayList<E> list1, ArrayList<E> list2 ){
+
+	ArrayList<E> temp = new ArrayList();
+	//goes through each element in the arraylist
+	for(E e : list1){
+		//checks if an element from list 2 matches with an element of list 1
+		if(!(list2.contains(e))){
+			//if no elements match from the two lists add to the temp list
+			temp.add(e);
+		}
+	}
+	//returns an arraylist  with the common items removed
+	return temp;
+
+}
+
+// Answer to (iii)
+public static <E extends Comparable<E>> void
+ countOccurrences (ArrayList<E> list1, ArrayList<E> list2){
+
+	//creates a temp arraylist to not edit or change the lists we are working with.
+	ArrayList<E> temp = (ArrayList<E>)list1.clone();
+	int count=0;
+	//for loop to go through each element from list 1
+	for(int x=0; x < temp.size(); x++){
+		//resets the counter for the next element in the arraylist
+		count=0;
+		//for loop to go through each element from list 2
+		for(int y=0; y < list2.size(); y++){
+			if(temp.get(x).equals(list2.get(y))){
+				//adds to the counter if the element matches with
+				//an element from list 2
+				count++;
+			}
+		}
+		//prints the count of each element in the arraylist
+		System.out.println(temp.get(x) + " of the 1st list occurs " + count
+				+ "times in the 2nd list");
+	}
+	//System.out.println();
+
+}
+
+
+
+}

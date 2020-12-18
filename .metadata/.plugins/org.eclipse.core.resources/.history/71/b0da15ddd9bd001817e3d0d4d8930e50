@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+//Lab 2
+//Richard Tran
+//991360218
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+	}
+
+
+
+public static <E>   ArrayList<E> addLists(ArrayList<E> list1, ArrayList<E> list2 ){
+
+		ArrayList<E> temp = (ArrayList<E>)list1.clone();
+		for(E e : list2){
+		temp.add(e);
+		}
+
+		return temp;
+
+	}
+
+public static <E extends Comparable<E>> ArrayList<E> removeFromList
+(ArrayList<E> list1, ArrayList<E> list2 ){
+	ArrayList<E> temp = new ArrayList();
+
+	for(E e : list1){
+		if(!(list2.contains(e))){
+			temp.add(e);
+		}
+	}
+	return temp;
+
+}
+
+
+
+}

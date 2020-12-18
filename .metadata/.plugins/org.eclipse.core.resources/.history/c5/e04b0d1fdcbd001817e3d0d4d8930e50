@@ -1,0 +1,84 @@
+import java.util.ArrayList;
+
+//Lab 2
+//Richard Tran
+//991360218
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//making both lists for the questions
+		Integer[] li1 = {6,4,1};
+		Integer[] li2 = {6,4,2,7,5,5,0,8,8,4,4};
+
+		ArrayList<Integer> list1 = new ArrayList();
+		for(Integer e : li1){
+			list1.add(e);
+		}
+		ArrayList<Integer> list2 = new ArrayList();
+		for(Integer e : li2){
+			list2.add(e);
+		}
+
+		//output for Answer to (i)
+		System.out.println("Answer to (i)");
+		System.out.println("The List 1 = " + list1);
+		System.out.println("The List 2 = " + list2);
+		System.out.println("Both Lists together: " + addLists(list1, list2));
+
+		//output for Answer to (ii)
+		System.out.println("Answer to (ii)");
+		System.out.println("List 1 after removing common items:"
+				+ removeFromList(list1, list2).size();
+
+
+	}
+
+
+
+public static <E>   ArrayList<E> addLists(ArrayList<E> list1, ArrayList<E> list2 ){
+
+		ArrayList<E> temp = new ArrayList();
+
+		temp.addAll(list1);
+		temp.addAll(list2);
+		return temp;
+
+	}
+
+public static <E extends Comparable<E>> ArrayList<E> removeFromList
+(ArrayList<E> list1, ArrayList<E> list2 ){
+
+	ArrayList<E> temp = new ArrayList();
+
+	for(E e : list1){
+		if(!(list2.contains(e))){
+			temp.add(e);
+		}
+	}
+	return temp;
+
+}
+
+public static <E extends Comparable<E>> void
+ countOccurrences (ArrayList<E> list1, ArrayList<E> list2){
+
+	ArrayList<E> temp = (ArrayList<E>)list1.clone();
+
+	for(int x=0; x < temp.size(); x++){
+		for(int y=0; y < list2.size(); y++){
+			if(temp.get(x).equals(list2.get(y))){
+				temp.remove(x);
+			}
+		}
+	}
+	System.out.println();
+
+}
+
+
+
+}

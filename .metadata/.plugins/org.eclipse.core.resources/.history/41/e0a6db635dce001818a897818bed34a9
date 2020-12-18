@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+public class Same_city  Comparator<Student>{
+
+	@Override
+	public int compare(Student s1, Student s2) {
+
+		if(s1.homeCity.equals(s2.homeCity)){
+			return 1;
+		}
+		else{
+		return 0;
+		}
+	}
+
+}

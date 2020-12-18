@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="application.MainController">
+   <children>
+      <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="76.0" text="Ok">
+         <tooltip>
+            <Tooltip text="Click this button to confirm" />
+         </tooltip>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="88.0" text="Cancel" />
+   </children>
+</FlowPane>

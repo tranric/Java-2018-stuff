@@ -1,0 +1,127 @@
+//Student: Richard Tran
+//ID: 991360218
+//Course: Advanced Object Oriented Programming-2
+//Course Code: PROG36859
+//Assignment: Lab 4
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Stack;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		Student s1 = new Student(1, "Bob", "Toronto", 2.5);
+		Student s2 = new Student(5, "Alice", "Mississauga", 3);
+		Student s3 = new Student(3, "George", "Waterloo", 2.7);
+		Student s4 = new Student(4, "Mark", "Toronto", 4);
+		Student s5 = new Student(2, "Josh", "Oakville", 2.9);
+
+		ArrayList<Student> studentlist = new ArrayList();
+		studentlist.add(s1);
+		studentlist.add(s2);
+		studentlist.add(s3);
+		studentlist.add(s4);
+		studentlist.add(s5);
+
+		//unsorted list of students
+		System.out.println("Unsorted: ");
+		System.out.println("Student List: " );
+
+		for(int x=0; x < studentlist.size(); x++){
+		System.out.println("Id: " + studentlist.get(x).getId() +
+			"\tName: " + studentlist.get(x).getFirstName() +
+		"\tHome city: " + studentlist.get(x).getHomeCity() +
+		"\tGPA: " + studentlist.get(x).getGpa());
+		}
+
+		//sorted by maximum gpa
+		System.out.println("\nSorted by maximum GPA: ");
+		Collections.sort(studentlist, new Maximum_gpa());
+		System.out.println("Student List: " );
+		for(int x=0; x < studentlist.size(); x++){
+		System.out.println("Id: " + studentlist.get(x).getId() +
+			"\tName: " + studentlist.get(x).getFirstName() +
+		"\tHome city: " + studentlist.get(x).getHomeCity() +
+		"\tGPA: " + studentlist.get(x).getGpa());
+		}
+
+		//sorted by minimum id
+		System.out.println("\nSorted by minimum id: ");
+		Collections.sort(studentlist, new Minimum_id());
+		System.out.println("Student List: " );
+		for(int x=0; x < studentlist.size(); x++){
+		System.out.println("Id: " + studentlist.get(x).getId() +
+			"\tName: " + studentlist.get(x).getFirstName() +
+		"\tHome city: " + studentlist.get(x).getHomeCity() +
+		"\tGPA: " + studentlist.get(x).getGpa());
+		}
+
+		//copy and reverse list using Iterator.
+		ListIterator<Student> lit = studentlist.listIterator(studentlist.size());
+		System.out.println("\nReversed list using Iterator: ");
+		//saves to a new list
+		ArrayList<Student> reversedstudentlist = new ArrayList();
+		while(lit.hasPrevious()){
+			reversedstudentlist.add(lit.previous());
+		}
+		//prints out the reversed list
+		System.out.println("Student List: " );
+		for(int x=0; x < reversedstudentlist.size(); x++){
+		System.out.println("Id: " + reversedstudentlist.get(x).getId() +
+			"\tName: " + reversedstudentlist.get(x).getFirstName() +
+		"\tHome city: " + reversedstudentlist.get(x).getHomeCity() +
+		"\tGPA: " + reversedstudentlist.get(x).getGpa());
+		}
+		//Iterator<String> it2 = colours.iterator();
+
+		//to demonstrate the stack class
+		System.out.println("\nStudent List reversed but using stack class: " );
+		//creates a new stack
+		Stack<Student> studentstack = new Stack();
+		//copies the list into an iterator
+		Iterator<Student> it2 = studentlist.iterator();
+		//pushes each object of the interator into the stack
+		 		while(it2.hasNext()){
+		 			studentstack.push(it2.next());
+		 		}
+		 //copies the stack size to ensure it goes through the whole stack
+		 int stacksize = studentstack.size();
+
+		 //prints each name from the stack and removes from the stack.
+		 for(int x=0; x < stacksize; x++){
+			// System.out.println(studentstack.size());
+			 System.out.println(studentstack.pop().getFirstName());
+
+		 }
+
+
+		//same city
+		 System.out.println("Same City Count");
+
+		 Stack<Student> studentcitystack = new Stack();
+		 int count=0;
+		 for(int x=0; x < studentlist.size(); x++){
+			 System.out.println(studentlist.get(x));
+			 count=0;
+			 for(int y=0; y < studentlist.size(); y++){
+				 if(studentlist.get(x).getHomeCity().equals(
+						 studentlist.get(y).getHomeCity())){
+					 studentlist.remove(y);
+					 count++;
+			 } }
+
+			 System.out.println("Home City: " + studentlist.get(x).getHomeCity()+
+					 " Number of students: " + count);
+
+		 }
+
+
+
+	}
+
+}

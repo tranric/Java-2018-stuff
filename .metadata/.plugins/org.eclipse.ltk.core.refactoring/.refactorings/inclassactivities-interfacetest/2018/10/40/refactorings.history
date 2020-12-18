@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 6 elements to &apos;inclassactivities-interfacetest/src&apos;&#x0D;&#x0A;- Original project: &apos;inclassactivities-interfacetest&apos;&#x0D;&#x0A;- Destination element: &apos;inclassactivities-interfacetest/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Fruit.java&#x0D;&#x0A;     Animal.java&#x0D;&#x0A;     Chicken.java&#x0D;&#x0A;     Edible.java&#x0D;&#x0A;     Oct2.java&#x0D;&#x0A;     Orange.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="Fruit.java" element2="Animal.java" element3="Chicken.java" element4="Edible.java" element5="Oct2.java" element6="Orange.java" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1538598027833" units="0" version="1.0"/>
+</session>

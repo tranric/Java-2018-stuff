@@ -1,0 +1,200 @@
+x iteration:0
+Time taken for PrefixAverages1 (in mil seconds): 6779
+x iteration:1
+Time taken for PrefixAverages1 (in mil seconds): 6310
+x iteration:2
+Time taken for PrefixAverages1 (in mil seconds): 6313
+x iteration:3
+Time taken for PrefixAverages1 (in mil seconds): 6324
+x iteration:4
+Time taken for PrefixAverages1 (in mil seconds): 6307
+x iteration:5
+Time taken for PrefixAverages1 (in mil seconds): 6356
+x iteration:6
+Time taken for PrefixAverages1 (in mil seconds): 6310
+x iteration:7
+Time taken for PrefixAverages1 (in mil seconds): 6303
+x iteration:8
+Time taken for PrefixAverages1 (in mil seconds): 6354
+x iteration:9
+Time taken for PrefixAverages1 (in mil seconds): 6311
+x2 iteration:0
+Time taken for PrefixAverages1 (in mil seconds): 25215
+x2 iteration:1
+Time taken for PrefixAverages1 (in mil seconds): 25231
+x2 iteration:2
+Time taken for PrefixAverages1 (in mil seconds): 25212
+x2 iteration:3
+Time taken for PrefixAverages1 (in mil seconds): 25208
+x2 iteration:4
+Time taken for PrefixAverages1 (in mil seconds): 25219
+x2 iteration:5
+Time taken for PrefixAverages1 (in mil seconds): 25220
+x2 iteration:6
+Time taken for PrefixAverages1 (in mil seconds): 25262
+x2 iteration:7
+Time taken for PrefixAverages1 (in mil seconds): 25211
+x2 iteration:8
+Time taken for PrefixAverages1 (in mil seconds): 25188
+x2 iteration:9
+Time taken for PrefixAverages1 (in mil seconds): 25236
+x3 iteration:0
+Time taken for PrefixAverages1 (in mil seconds): 56668
+x3 iteration:1
+Time taken for PrefixAverages1 (in mil seconds): 56677
+x3 iteration:2
+Time taken for PrefixAverages1 (in mil seconds): 56714
+x3 iteration:3
+Time taken for PrefixAverages1 (in mil seconds): 56884
+x3 iteration:4
+Time taken for PrefixAverages1 (in mil seconds): 56911
+x3 iteration:5
+Time taken for PrefixAverages1 (in mil seconds): 52945
+x3 iteration:6
+Time taken for PrefixAverages1 (in mil seconds): 42236
+x3 iteration:7
+Time taken for PrefixAverages1 (in mil seconds): 42283
+x3 iteration:8
+Time taken for PrefixAverages1 (in mil seconds): 42225
+x3 iteration:9
+Time taken for PrefixAverages1 (in mil seconds): 42138
+x4 iteration:0
+Time taken for PrefixAverages1 (in mil seconds): 75549
+x4 iteration:1
+Time taken for PrefixAverages1 (in mil seconds): 76137
+x4 iteration:2
+Time taken for PrefixAverages1 (in mil seconds): 75805
+x4 iteration:3
+Time taken for PrefixAverages1 (in mil seconds): 75931
+x4 iteration:4
+Time taken for PrefixAverages1 (in mil seconds): 75929
+x4 iteration:5
+Time taken for PrefixAverages1 (in mil seconds): 75587
+x4 iteration:6
+Time taken for PrefixAverages1 (in mil seconds): 75127
+x4 iteration:7
+Time taken for PrefixAverages1 (in mil seconds): 75041
+x4 iteration:8
+Time taken for PrefixAverages1 (in mil seconds): 75204
+x4 iteration:9
+Time taken for PrefixAverages1 (in mil seconds): 77032
+x5 iteration:0
+Time taken for PrefixAverages1 (in mil seconds): 123467
+x5 iteration:1
+Time taken for PrefixAverages1 (in mil seconds): 122104
+x5 iteration:2
+Time taken for PrefixAverages1 (in mil seconds): 120335
+x5 iteration:3
+Time taken for PrefixAverages1 (in mil seconds): 119452
+x5 iteration:4
+Time taken for PrefixAverages1 (in mil seconds): 120080
+x5 iteration:5
+Time taken for PrefixAverages1 (in mil seconds): 121500
+x5 iteration:6
+Time taken for PrefixAverages1 (in mil seconds): 117761
+x5 iteration:7
+Time taken for PrefixAverages1 (in mil seconds): 117451
+x5 iteration:8
+Time taken for PrefixAverages1 (in mil seconds): 119204
+x5 iteration:9
+Time taken for PrefixAverages1 (in mil seconds): 118438
+x iteration:0
+Time taken for PrefixAverages2 (in mil seconds): 13
+x iteration:1
+Time taken for PrefixAverages2 (in mil seconds): 10
+x iteration:2
+Time taken for PrefixAverages2 (in mil seconds): 10
+x iteration:3
+Time taken for PrefixAverages2 (in mil seconds): 9
+x iteration:4
+Time taken for PrefixAverages2 (in mil seconds): 9
+x iteration:5
+Time taken for PrefixAverages2 (in mil seconds): 9
+x iteration:6
+Time taken for PrefixAverages2 (in mil seconds): 11
+x iteration:7
+Time taken for PrefixAverages2 (in mil seconds): 9
+x iteration:8
+Time taken for PrefixAverages2 (in mil seconds): 9
+x iteration:9
+Time taken for PrefixAverages2 (in mil seconds): 9
+x2 iteration:0
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:1
+Time taken for PrefixAverages2 (in mil seconds): 19
+x2 iteration:2
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:3
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:4
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:5
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:6
+Time taken for PrefixAverages2 (in mil seconds): 19
+x2 iteration:7
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:8
+Time taken for PrefixAverages2 (in mil seconds): 18
+x2 iteration:9
+Time taken for PrefixAverages2 (in mil seconds): 18
+x3 iteration:0
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:1
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:2
+Time taken for PrefixAverages2 (in mil seconds): 29
+x3 iteration:3
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:4
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:5
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:6
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:7
+Time taken for PrefixAverages2 (in mil seconds): 28
+x3 iteration:8
+Time taken for PrefixAverages2 (in mil seconds): 27
+x3 iteration:9
+Time taken for PrefixAverages2 (in mil seconds): 28
+x4 iteration:0
+Time taken for PrefixAverages2 (in mil seconds): 37
+x4 iteration:1
+Time taken for PrefixAverages2 (in mil seconds): 38
+x4 iteration:2
+Time taken for PrefixAverages2 (in mil seconds): 36
+x4 iteration:3
+Time taken for PrefixAverages2 (in mil seconds): 36
+x4 iteration:4
+Time taken for PrefixAverages2 (in mil seconds): 37
+x4 iteration:5
+Time taken for PrefixAverages2 (in mil seconds): 40
+x4 iteration:6
+Time taken for PrefixAverages2 (in mil seconds): 37
+x4 iteration:7
+Time taken for PrefixAverages2 (in mil seconds): 36
+x4 iteration:8
+Time taken for PrefixAverages2 (in mil seconds): 38
+x4 iteration:9
+Time taken for PrefixAverages2 (in mil seconds): 36
+x5 iteration:0
+Time taken for PrefixAverages2 (in mil seconds): 49
+x5 iteration:1
+Time taken for PrefixAverages2 (in mil seconds): 52
+x5 iteration:2
+Time taken for PrefixAverages2 (in mil seconds): 46
+x5 iteration:3
+Time taken for PrefixAverages2 (in mil seconds): 53
+x5 iteration:4
+Time taken for PrefixAverages2 (in mil seconds): 46
+x5 iteration:5
+Time taken for PrefixAverages2 (in mil seconds): 45
+x5 iteration:6
+Time taken for PrefixAverages2 (in mil seconds): 48
+x5 iteration:7
+Time taken for PrefixAverages2 (in mil seconds): 48
+x5 iteration:8
+Time taken for PrefixAverages2 (in mil seconds): 45
+x5 iteration:9
+Time taken for PrefixAverages2 (in mil seconds): 45

@@ -1,0 +1,44 @@
+		//calculate the rate of growth of time and get the Big-Oh notation
+		//of each prefix from the data of #2-B) -  Question 3
+
+		// question 4-A) run the program of prefix 1 with n=50000
+		double[] array4a = new double[50000];
+		PrefixAverages1(array4a, 50000);
+
+		//question 4-B) guess the amount of time for 5x the size from 4-A)
+		//it took 1513 milliseconds for 4-A) so i would guess it
+		//will take 7565.
+
+		// question 4-C) run the program of the 50000*5 / 250000
+		double[] array4c = new double[250000];
+		PrefixAverages1(array4c, (50000*5));
+		// it took 29367 milliseconds which is almost 4 times longer
+		//then expected.
+		//we got 7565 as the eximate by multipling the 1513 from A by 5.
+
+		//question 5-A) run the program of prefix 2 with n=2500000
+		double[] array5a = new double[2500000];
+		PrefixAverages2(array5a, 2500000);
+
+
+		//question 5-B) guess the amount of time for 5x the size from 5-A)
+		//5-A took 351 ms to run. estimated time is 1755ms
+
+		// question 5-C) run the program of the 2500000*5 / 12500000
+		double[] array5c = new double[12500000];
+		PrefixAverages2(array5c, (2500000*5));
+		//it took 1269ms to run
+		//it took a shorter amount of time by almost 30% faster to run the 5 times
+		//larger the size amount
+		//we got 1755 by multipling the 351 by 5.
+
+
+
+		output run times of each question:
+		4A) Time taken for PrefixAverages1 (in mil seconds): 1513
+		
+		4C)Time taken for PrefixAverages1 (in mil seconds): 29367
+
+		5A)Time taken for PrefixAverages2 (in mil seconds): 351
+
+		5C)Time taken for PrefixAverages2 (in mil seconds): 1269

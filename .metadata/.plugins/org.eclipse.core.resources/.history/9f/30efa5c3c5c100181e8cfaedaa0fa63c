@@ -1,0 +1,45 @@
+
+public class testfeedinganimals {
+
+	public static void main(String[] args) {
+
+		Deer deer = new Deer();
+		Horse horse = new Horse();
+		Elephant elephant = new Elephant();
+
+		feedAnimal(deer);
+		feedAnimal(horse);
+		feedAnimal(elephant);
+
+	}
+
+	static void feedAnimal(Animal animal){
+		animal.feed();
+	}
+
+
+
+}
+
+class Animal{
+	 void feed(){
+		System.out.println("Feed animal");
+	}
+}
+
+class Deer extends Animal{
+	 void feed(){
+		System.out.println("Feeding done: Deer needs 5 amount of food.");
+	}
+}
+class Horse extends Animal{
+	 void feed(){
+		System.out.println("Feeding done: Horse needs 10 amount of food.");
+	}
+}
+class Elephant extends Animal{
+	 void feed(){
+		System.out.println("Feeding done: Elephant needs 50 amount of food.");
+	}
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Database.java&apos; to &apos;PROG21399_A4_991360218_RichardTran/src/application&apos;&#x0D;&#x0A;- Original project: &apos;TwoControllerExampleWithArrayList&apos;&#x0D;&#x0A;- Destination element: &apos;PROG21399_A4_991360218_RichardTran/src/application&apos;&#x0D;&#x0A;- Original element: &apos;application.Database.java&apos;" description="Copy compilation unit" destination="=PROG21399_A4_991360218_RichardTran/src&lt;application" element1="/src&lt;application{Database.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1534025762942" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;randomaccessfile.readfileusingjfilechooser.java&apos; to &apos;ReadFileUsingJFileChooser.java&apos;&#x0D;&#x0A;- Original project: &apos;randomaccessfile&apos;&#x0D;&#x0A;- Original element: &apos;randomaccessfile.readfileusingjfilechooser.java&apos;&#x0D;&#x0A;- Renamed element: &apos;randomaccessfile.ReadFileUsingJFileChooser.java&apos;" description="Rename compilation unit &apos;readfileusingjfilechooser.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;randomaccessfile{readfileusingjfilechooser.java" name="ReadFileUsingJFileChooser.java" references="false" stamp="1541623682675" version="1.0"/>
+</session>
